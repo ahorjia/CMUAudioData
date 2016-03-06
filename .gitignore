@@ -5,6 +5,8 @@
 *.sent
 *.png
 *.gz
+*.jpeg
+*.jpg
 
 # OS generated files #
 ######################

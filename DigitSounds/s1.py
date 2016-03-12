@@ -1,3 +1,4 @@
+#based on https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3%20-%20Neural%20Networks/bidirectional_rnn.py
 
 # Import MINST data
 import modified_input_data 

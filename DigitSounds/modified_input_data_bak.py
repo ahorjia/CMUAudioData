@@ -68,6 +68,7 @@ va_size = 128
 
 def extract_images_labels(folder_name):
     images = [f for f in listdir(folder_name) if isfile(join(folder_name, f)) and f.endswith('png')][:max_up]
+    images = np.random.shuffle(images)
     rets = np.zeros((len(images), 512, 512))
     lbs = np.zeros((len(images), 10))
     counter = 0
@@ -88,7 +89,7 @@ def read_data_sets(train_dir):
     TRAIN_SIZE = tr_size
     TEST_SIZE = te_size
     VALIDATION_SIZE = max_up - TRAIN_SIZE - TEST_SIZE
-    folder = "/home/ubuntu/ali/tf/sample1/spoken_numbers" 
+    folder = "/home/agah/TF/CSE253Project/spoken_numbers" 
     images, labels = extract_images_labels(folder)
 
     print("Image Shapes", images.shape)

@@ -3,7 +3,7 @@
 # Import MINST data
 import modified_input_data 
 # mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
-mnist = modified_input_data.read_data_sets("/home/ubuntu/ali/tf/sample1/spoken_numbers")
+mnist = modified_input_data.read_data_sets("/home/agah/TF/CSE253Project/spoken_numbers")
 
 print("mnist returned")
 
